@@ -4,7 +4,7 @@ Date:						3-03-2022;
 Modified:					3-03-2022;
 Creator:					Daniel K. Valente;
 Version:					0.0.1.2;
-Licensing:					BSD 3
+Licensing:					BSD 3-Clause License
 Licensing Information:		General public licensing which allows any user the freedom to execute/run, modify, share, and study this class object and all of the contents within this file.
 Details:
 							This is a class object that provides a means to easily communicate with server-side processes.
