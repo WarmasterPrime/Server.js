@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Server Script Testing</title>
-		<script src="Server.js" defer></script>
-		<script src="main.js" defer></script>
-	</head>
+<head>
+	<title>Server Script Testing</title>
+	<!--<script src="Server.js" defer></script>-->
+	<script src="main.js" type="module"></script>
+</head>
 	<body>
-		<div id="output"></div>
+		<script src="Server.js"></script>
+		<script>
+			let server = new Server()
+			console.log(server.canReachHost("https://example.com")) // true or false
+			server.send({src: "https://example.com/api", args: {key: "value"}}, resp => console.log(resp))
+		</script>
 	</body>
 </html>

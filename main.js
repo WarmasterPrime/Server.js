@@ -1,18 +1,4 @@
-
-
-setTimeout(function () {ini();}, 0);
-
-
-function ini() {
-	let args = {
-		"src": "http://doft.ddns.net/Assets/js/Server/process.php",
-		"args": {
-			"message": "Hello World"
-		}
-	};
-	Server.send(args, "response");
-}
-
-function response(data) {
-	document.getElementById("output").innerHTML = data;
-}
+import Server from './Server.js'
+let server = new Server()
+console.log(server.canReachHost("https://example.com")) // true or false
+server.send({src: "https://example.com/api", args: {key: "value"}}, resp => console.log(resp))
