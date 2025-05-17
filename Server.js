@@ -40,7 +40,6 @@ ERROR STATUS CODES:
 	0x15:			Scripts are disabled.
 	0x16:			Third-party/External application, extension, or script is creating a conflict.
 	0x17:			Interception conflict.
-
 */
 
 
